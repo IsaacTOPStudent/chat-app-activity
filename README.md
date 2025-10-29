@@ -139,7 +139,7 @@ Este proyecto es de código abierto y está disponible bajo la [Licencia MIT](LI
 ##  Autor
 
 **Tu Nombre**
-- GitHub: [@TU_USUARIO](https://github.com/TU_USUARIO)
+- GitHub: IsaacTOPStudent
 
 ---
 
