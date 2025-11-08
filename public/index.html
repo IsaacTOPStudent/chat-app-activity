@@ -1,22 +1,40 @@
+
+<!-- public/index.html -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat App</title>
-    <link rel="stylesheet" href="/styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chat Multicast - Node.js</title>
+  <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
-    <ul class="messages"></ul>
+  <header class="topbar">
+    <h1>Chat Multicast</h1>
+    <div id="user-count">Conectados: {{ data.userCount }}</div>
+  </header>
 
-    <form class="form-chat" action="">
-        <input class="input-form-chat" autocomplete="off" placeholder="Write a message here!!">
-        <button>Send</button>
-    </form>
+  <main class="main-area">
+    <aside class="sidebar">
+      <h3>Usuarios</h3>
+      <ul class="user-list">
+      </ul>
+    </aside>
 
-    <script src="/socket.io/socket.io.js"></script>
+    <section class="chat-area">
+      <ul class="messages"></ul>
 
-    <script src="/client.js"></script>
-    
+      <form class="form-chat" action="">
+        <input class="input-form-chat" autocomplete="off" placeholder="Escribe un mensaje..." />
+        <button>Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- socket.io client (servido por el servidor automáticamente) -->
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/client.js"></script>
 </body>
 </html>
+
+
